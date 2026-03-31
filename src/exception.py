@@ -1,5 +1,5 @@
 import sys
-import logging
+from logger import logging
 
 def error_message_detail(error, error_detail:sys):
     _, _, exc_tb = error_detail.exc_info()
@@ -25,5 +25,5 @@ class CustomException(Exception):
 #     try:
 #         z=1/0
 #     except Exception as e:
-#         logging.info('Logging has started.')
+#         logging.info('Zero division error.')
 #         raise CustomException(e, sys)
